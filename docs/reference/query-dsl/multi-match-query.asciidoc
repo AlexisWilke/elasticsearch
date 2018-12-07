@@ -65,7 +65,7 @@ combined to build a query.
 
 WARNING: If you have a huge number of fields, the above auto expansion might lead to
 querying a large number of fields which might cause performance issues. In future versions
-(stating in 7.0) there will be a limit of no more than 1024 fields that can be queried at once.
+(starting in 7.0) there will be a limit of no more than 1024 fields that can be queried at once.
 
 [[multi-match-types]]
 [float]
