@@ -58,18 +58,18 @@ match the query string `"a* b* c*"`.
 Pure wildcards `\*` are rewritten to <<query-dsl-exists-query,`exists`>> queries for efficiency.
 As a consequence, the wildcard `"field:*"` would match documents with an empty value
  like the following:
-```
-{
-  "field": ""
-}
-```
+
+    {
+      "field": ""
+    }
+
 \... and would **not** match if the field is missing or set with an explicit null
 value like the following:
-```
-{
-  "field": null
-}
-```
+
+    {
+      "field": null
+    }
+
 =======
 
 [WARNING]
