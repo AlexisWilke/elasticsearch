@@ -27,7 +27,7 @@ When it's needed to specify a `terms` filter with a lot of terms it can
 be beneficial to fetch those term values from a document in an index. A
 concrete example would be to filter tweets tweeted by your followers.
 Potentially the amount of user ids specified in the terms filter can be
-a lot. In this scenario it makes sense to use the terms filter's terms
+a lot. In this scenario it makes sense to use the terms filter
 lookup mechanism.
 
 The terms lookup mechanism supports the following options:
