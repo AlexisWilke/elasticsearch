@@ -423,12 +423,12 @@ to the grand-parent (the greater parent of the lineage):
 
 [source,js]
 --------------------------------------------------
-PUT my_index/_doc/3?routing=1&refresh <1>
+PUT my_index/_doc/5?routing=1&refresh <1>
 {
   "text": "This is a vote",
   "my_join_field": {
     "name": "vote",
-    "parent": "2" <2>
+    "parent": "3" <2>
   }
 }
 --------------------------------------------------
